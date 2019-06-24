@@ -37,6 +37,8 @@ github.com/c-bata/go-prompt v0.2.2 h1:uyKRz6Z6DUyj49QVijyM339UJV9yhbr70gESwbNU3e
 github.com/c-bata/go-prompt v0.2.2/go.mod h1:VzqtzE2ksDBcdln8G7mk2RX9QyGjH+OVqOCSiVIqS34=
 github.com/cenkalti/backoff v2.1.1+incompatible h1:tKJnvO2kl0zmb/jA5UKAt4VoEVw1qxKWjE/Bpp46npY=
 github.com/cenkalti/backoff v2.1.1+incompatible/go.mod h1:90ReRw6GdpyfrHakVjL/QHaoyV4aDUVVkXQJJJ3NXXM=
+github.com/chonla/format v0.0.0-20180703031521-85c8f5f50122 h1:Uqs5zKqPADveB6mV/bgBZDSrhzrtH574L8BJNMMHk0g=
+github.com/chonla/format v0.0.0-20180703031521-85c8f5f50122/go.mod h1:l8yeweHrdGaParAIIz6nTFxLh1zBdqiTb9zIoLu1QM8=
 github.com/containerd/continuity v0.0.0-20180919190352-508d86ade3c2 h1:oiQ0OCfHdE7YXG94mc3HpKhbaZ8Nk17lw4E+ycI8Zgs=
 github.com/containerd/continuity v0.0.0-20180919190352-508d86ade3c2/go.mod h1:GL3xCUCBDV3CZiTSEKksMWbLE66hEyuu9qyDOOqM47Y=
 github.com/couchbase/vellum v0.0.0-20180314210611-5083a469fcef h1:/lcHdEYiY6j5HGJXlI8mjJE83iPTrCD46zcLjxgKnAs=

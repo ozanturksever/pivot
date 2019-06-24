@@ -9,6 +9,7 @@ import (
 	"strings"
 	"time"
 
+	"github.com/chonla/format"
 	"github.com/ghetzel/go-stockutil/maputil"
 	"github.com/ghetzel/go-stockutil/rxutil"
 	"github.com/ghetzel/go-stockutil/sliceutil"
@@ -122,8 +123,8 @@ var CassandraTypeMapping = SqlTypeMapping{
 	ObjectType:           `MAP`,
 	ArrayType:            `LIST`,
 	RawType:              `BLOB`,
-	SubtypeFormat:        `%s<%v>`,
-	MultiSubtypeFormat:   `%s<%v,%v>`,
+	SubtypeFormat:        `%<type>v<%<value>v>`,
+	MultiSubtypeFormat:   `%<type>v<%<key>v,%<value>v>`,
 	PlaceholderFormat:    `TODO`,
 	PlaceholderArgument:  `TODO`,
 	TableNameFormat:      "%s",
@@ -171,16 +172,17 @@ var PostgresTypeMapping = SqlTypeMapping{
 	NestedFieldJoiner:    `.`,
 }
 
-var PostgresJsonTypeMapping = SqlTypeMapping{
-	Name:         `postgres-json`,
-	StringType:   `TEXT`,
-	IntegerType:  `BIGINT`,
-	FloatType:    `NUMERIC`,
-	BooleanType:  `BOOLEAN`,
-	DateTimeType: `TIMESTAMP`,
+var PostgresComplexTypeMapping = SqlTypeMapping{
 	// ObjectType:   `JSONB`, // TODO: implement the JSONB functionality in PostgreSQL 9.2+
+	Name:                 `postgres-complex`,
+	StringType:           `TEXT`,
+	IntegerType:          `BIGINT`,
+	FloatType:            `NUMERIC`,
+	BooleanType:          `BOOLEAN`,
+	DateTimeType:         `TIMESTAMP`,
 	ObjectType:           `VARCHAR`,
-	ArrayType:            `VARCHAR`,
+	ArrayType:            `ARRAY`,
+	SubtypeFormat:        `%<value>v %<type>v`,
 	RawType:              `BYTEA`,
 	PlaceholderFormat:    `$%d`,
 	PlaceholderArgument:  `index1`,
@@ -215,8 +217,8 @@ func GetSqlTypeMapping(name string) (SqlTypeMapping, error) {
 	switch name {
 	case `postgresql`, `pgsql`:
 		return PostgresTypeMapping, nil
-	case `postgresql-json`, `pgsql-json`:
-		return PostgresJsonTypeMapping, nil
+	case `postgresql-json`, `pgsql-json`, `postgres-complex`:
+		return PostgresComplexTypeMapping, nil
 	case `sqlite`:
 		return SqliteTypeMapping, nil
 	case `mysql`:
@@ -798,12 +800,11 @@ func (self *Sql) ToNativeType(in dal.Type, subtypes []dal.Type, length int) (str
 		} else if len(subtypes) == 2 {
 			if keyType, err := self.ToNativeType(subtypes[0], nil, 0); err == nil {
 				if valType, err := self.ToNativeType(subtypes[1], nil, 0); err == nil {
-					out = fmt.Sprintf(
-						self.TypeMapping.MultiSubtypeFormat,
-						self.TypeMapping.ObjectType,
-						keyType,
-						valType,
-					)
+					out = format.Sprintf(self.TypeMapping.MultiSubtypeFormat, map[string]interface{}{
+						`type`:  self.TypeMapping.ObjectType,
+						`key`:   keyType,
+						`value`: valType,
+					})
 				} else {
 					return ``, err
 				}
@@ -817,11 +818,10 @@ func (self *Sql) ToNativeType(in dal.Type, subtypes []dal.Type, length int) (str
 			out = self.TypeMapping.ArrayType
 		} else if len(subtypes) == 1 {
 			if valType, err := self.ToNativeType(subtypes[0], nil, 0); err == nil {
-				out = fmt.Sprintf(
-					self.TypeMapping.SubtypeFormat,
-					self.TypeMapping.ArrayType,
-					valType,
-				)
+				out = format.Sprintf(self.TypeMapping.SubtypeFormat, map[string]interface{}{
+					`type`:  self.TypeMapping.ArrayType,
+					`value`: valType,
+				})
 			} else {
 				return ``, err
 			}

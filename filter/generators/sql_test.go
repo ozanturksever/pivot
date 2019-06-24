@@ -1122,6 +1122,7 @@ func TestSqlToNativeType(t *testing.T) {
 		{CassandraTypeMapping, dal.ArrayType, []dal.Type{dal.IntType}, 0, `LIST<INT>`},
 		{CassandraTypeMapping, dal.RawType, nil, 0, `BLOB`},
 		{CassandraTypeMapping, dal.RawType, nil, 256, `BLOB(256)`},
+		{PostgresComplexTypeMapping, dal.ArrayType, []dal.Type{dal.IntType}, 0, `BIGINT ARRAY`},
 	} {
 		help := fmt.Sprintf("Case %d: %v %v(%v)", i, tcase.Mapping, tcase.Type, tcase.Subtypes)
 		gen := NewSqlGenerator()

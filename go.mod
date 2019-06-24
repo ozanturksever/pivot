@@ -14,6 +14,7 @@ require (
 	github.com/blevesearch/segment v0.0.0-20160915185041-762005e7a34f // indirect
 	github.com/boltdb/bolt v0.0.0-20171120010307-9da317453632 // indirect
 	github.com/c-bata/go-prompt v0.2.2 // indirect
+	github.com/chonla/format v0.0.0-20180703031521-85c8f5f50122
 	github.com/containerd/continuity v0.0.0-20180919190352-508d86ade3c2 // indirect
 	github.com/couchbase/vellum v0.0.0-20180314210611-5083a469fcef // indirect
 	github.com/cznic/b v0.0.0-20180115125044-35e9bbe41f07 // indirect

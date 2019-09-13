@@ -7,7 +7,7 @@ type Rollup struct {
 }
 
 type Group struct {
-	ID      map[string]interface{} `json:"id"`
+	Values  map[string]interface{} `json:"values"`
 	Rollups []Rollup               `json:"rollups,omitempty"`
 	Records *RecordSet             `json:"records,omitempty"`
 }
@@ -16,7 +16,7 @@ type Groups []*Group
 
 func NewGroup() *Group {
 	return &Group{
-		ID:      make(map[string]interface{}),
+		Values:  make(map[string]interface{}),
 		Rollups: make([]Rollup, 0),
 	}
 }

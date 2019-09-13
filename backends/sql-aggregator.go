@@ -56,7 +56,7 @@ func (self *SqlBackend) GroupBy(collection *dal.Collection, groupBy []string, ag
 				values := make([]interface{}, len(columns))
 
 				for i := 0; i < len(groupBy); i++ {
-					v := ``
+					var v interface{}
 					values[i] = &v
 				}
 
@@ -72,12 +72,45 @@ func (self *SqlBackend) GroupBy(collection *dal.Collection, groupBy []string, ag
 				}
 
 				if err := rows.Scan(values...); err == nil {
-					for i, val := range values {
-						values[i] = typeutil.ResolveValue(val)
+					for i, v := range values {
+						if v != nil {
+							switch v.(type) {
+							case *sql.NullString:
+								if nv := v.(*sql.NullString); nv.Valid {
+									values[i] = nv.String
+								} else {
+									values[i] = nil
+								}
+							case *sql.NullBool:
+								if nv := v.(*sql.NullBool); nv.Valid {
+									values[i] = nv.Bool
+								} else {
+									values[i] = nil
+								}
+							case *sql.NullInt64:
+								if nv := v.(*sql.NullInt64); nv.Valid {
+									values[i] = nv.Int64
+								} else {
+									values[i] = nil
+								}
+							case *sql.NullFloat64:
+								if nv := v.(*sql.NullFloat64); nv.Valid {
+									values[i] = nv.Float64
+								} else {
+									values[i] = nil
+								}
+							default:
+								values[i] = typeutil.ResolveValue(v)
+							}
+						}
 					}
 
 					for i := 0; i < len(groupBy); i++ {
-						group.ID[typeutil.String(groupBy[i])] = values[i]
+						if typeutil.IsZero(values[i]) {
+							group.Values[typeutil.String(groupBy[i])] = nil
+						} else {
+							group.Values[typeutil.String(groupBy[i])] = values[i]
+						}
 					}
 
 					for i := 0; i < len(aggregates); i++ {

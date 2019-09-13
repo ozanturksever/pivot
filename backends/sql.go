@@ -846,7 +846,13 @@ func (self *SqlBackend) makeQueryGen(collection *dal.Collection) *generators.Sql
 	return queryGen
 }
 
-func (self *SqlBackend) scanFnValueToRecord(queryGen *generators.Sql, collection *dal.Collection, columns []string, scanFn reflect.Value, wantedFields []string) (*dal.Record, error) {
+func (self *SqlBackend) scanFnValueToRecord(
+	queryGen *generators.Sql,
+	collection *dal.Collection,
+	columns []string,
+	scanFn reflect.Value,
+	wantedFields []string,
+) (*dal.Record, error) {
 	if scanFn.Kind() != reflect.Func {
 		return nil, fmt.Errorf("Can only accept a function value")
 	}

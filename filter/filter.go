@@ -72,6 +72,27 @@ const (
 	Count
 )
 
+func (self Aggregation) String() string {
+	switch self {
+	case First:
+		return `first`
+	case Last:
+		return `last`
+	case Minimum:
+		return `minimum`
+	case Maximum:
+		return `maximum`
+	case Sum:
+		return `sum`
+	case Average:
+		return `average`
+	case Count:
+		return `count`
+	default:
+		return `-`
+	}
+}
+
 type ConjunctionType string
 
 const (

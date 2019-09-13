@@ -49,9 +49,9 @@ func (self *MongoBackend) Average(collection *dal.Collection, field string, f ..
 	return self.aggregateFloat(collection, filter.Average, field, f)
 }
 
-func (self *MongoBackend) GroupBy(collection *dal.Collection, groupBy []string, aggregates []filter.Aggregate, flt ...*filter.Filter) (*dal.RecordSet, error) {
-	if result, err := self.aggregate(collection, groupBy, aggregates, flt, false); err == nil {
-		return result.(*dal.RecordSet), nil
+func (self *MongoBackend) GroupBy(collection *dal.Collection, groupBy []string, aggregates []filter.Aggregate, flt ...*filter.Filter) (dal.Groups, error) {
+	if _, err := self.aggregate(collection, groupBy, aggregates, flt, false); err == nil {
+		return nil, fmt.Errorf("Not Implemented")
 	} else {
 		return nil, err
 	}

@@ -13,5 +13,5 @@ type Aggregator interface {
 	Minimum(collection *dal.Collection, field string, f ...*filter.Filter) (float64, error)
 	Maximum(collection *dal.Collection, field string, f ...*filter.Filter) (float64, error)
 	Average(collection *dal.Collection, field string, f ...*filter.Filter) (float64, error)
-	GroupBy(collection *dal.Collection, fields []string, aggregates []filter.Aggregate, f ...*filter.Filter) (*dal.RecordSet, error)
+	GroupBy(collection *dal.Collection, fields []string, aggregates []filter.Aggregate, f ...*filter.Filter) (dal.Groups, error)
 }

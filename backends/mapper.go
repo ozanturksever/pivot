@@ -30,5 +30,5 @@ type Mapper interface {
 	Minimum(field string, flt interface{}) (float64, error)
 	Maximum(field string, flt interface{}) (float64, error)
 	Average(field string, flt interface{}) (float64, error)
-	GroupBy(fields []string, aggregates []filter.Aggregate, flt interface{}) (*dal.RecordSet, error)
+	GroupBy(fields []string, aggregates []filter.Aggregate, flt interface{}) (dal.Groups, error)
 }

@@ -41,9 +41,65 @@ func (self *SqlBackend) Average(collection *dal.Collection, field string, f ...*
 	return self.aggregateFloat(collection, filter.Average, field, f)
 }
 
-func (self *SqlBackend) GroupBy(collection *dal.Collection, groupBy []string, aggregates []filter.Aggregate, f ...*filter.Filter) (*dal.RecordSet, error) {
-	if result, err := self.aggregate(collection, groupBy, aggregates, f, self.extractRecordSet); err == nil {
-		return result.(*dal.RecordSet), nil
+func (self *SqlBackend) GroupBy(collection *dal.Collection, groupBy []string, aggregates []filter.Aggregate, f ...*filter.Filter) (dal.Groups, error) {
+	groups := make(dal.Groups, 0)
+
+	if _, err := self.aggregate(collection, groupBy, aggregates, f, func(
+		rows *sql.Rows,
+		_ *generators.Sql,
+		_ *dal.Collection,
+		_ *filter.Filter,
+	) (interface{}, error) {
+		if columns, err := rows.Columns(); err == nil {
+			for rows.Next() {
+				group := dal.NewGroup()
+				values := make([]interface{}, len(columns))
+
+				for i := 0; i < len(groupBy); i++ {
+					v := ``
+					values[i] = &v
+				}
+
+				for i := 0; i < len(aggregates); i++ {
+					switch aggregates[i].Aggregation {
+					case filter.Count:
+						v := uint64(0)
+						values[len(groupBy)+i] = &v
+					default:
+						v := float64(0)
+						values[len(groupBy)+i] = &v
+					}
+				}
+
+				if err := rows.Scan(values...); err == nil {
+					for i, val := range values {
+						values[i] = typeutil.ResolveValue(val)
+					}
+
+					for i := 0; i < len(groupBy); i++ {
+						group.ID[typeutil.String(groupBy[i])] = values[i]
+					}
+
+					for i := 0; i < len(aggregates); i++ {
+						group.Rollups = append(group.Rollups, dal.Rollup{
+							Field:       aggregates[i].Field,
+							Aggregation: aggregates[i].Aggregation.String(),
+							Value:       typeutil.Float(values[len(groupBy)+i]),
+						})
+					}
+
+					groups = append(groups, group)
+				} else {
+					return nil, err
+				}
+			}
+		} else {
+			return nil, err
+		}
+
+		return nil, nil
+	}); err == nil {
+		return groups, nil
 	} else {
 		return nil, err
 	}
@@ -62,7 +118,13 @@ func (self *SqlBackend) aggregateFloat(collection *dal.Collection, aggregation f
 	}
 }
 
-func (self *SqlBackend) aggregate(collection *dal.Collection, groupBy []string, aggregates []filter.Aggregate, f []*filter.Filter, resultFn sqlAggResultFunc) (interface{}, error) {
+func (self *SqlBackend) aggregate(
+	collection *dal.Collection,
+	groupBy []string,
+	aggregates []filter.Aggregate,
+	f []*filter.Filter,
+	resultFn sqlAggResultFunc,
+) (interface{}, error) {
 	queryGen := self.makeQueryGen(collection)
 	var flt *filter.Filter
 

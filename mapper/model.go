@@ -355,7 +355,7 @@ func (self *Model) Average(field string, flt interface{}) (float64, error) {
 	}
 }
 
-func (self *Model) GroupBy(fields []string, aggregates []filter.Aggregate, flt interface{}) (*dal.RecordSet, error) {
+func (self *Model) GroupBy(fields []string, aggregates []filter.Aggregate, flt interface{}) (dal.Groups, error) {
 	if f, err := filter.Parse(flt); err == nil {
 		f.IdentityField = self.collection.IdentityField
 

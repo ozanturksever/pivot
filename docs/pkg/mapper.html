@@ -44,7 +44,7 @@
                                 <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu">
-                                
+
                                 <li>
                                     <a href="/pivot/pkg/backends.html">backends</a>
                                 </li>
@@ -81,19 +81,19 @@
                         </li>
                     </ul>
 
-                    
+
                 </div>
             </div>
         </nav>
 
         <div class="container">
-            
+
 <br>
 <div class="clearfix" id="x-projnav">
-	<a href="https://github.com/ghetzel/pivot"><strong>pivot:</strong></a>
-	
+	<a href="https://github.com/ozanturksever/pivot"><strong>pivot:</strong></a>
+
 	<a href="/pivot/pkg/pivot.html">https://github.com/ghetzel/pivot</a><span class="text-muted">/</span><span class="text-muted">mapper</span>
-	
+
 
 	<span class="pull-right">
 		<a href="#pkg-index">Index</a>
@@ -116,133 +116,133 @@
 </h3>
 
 <ul class="list-unstyled">
-	
-	
 
-	
-	
 
-	
-	
 
-	
-	
 
-	
-	
+
+
+
+
+
+
+
+
+
+
     <li>
 		<a href="#Mapper">type Mapper </a>
 
-		
-		
+
+
 	</li>
-	
+
     <li>
 		<a href="#Model">type Model</a>
 
-		
-		
+
+
 		<ul>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 			<li>
-				
+
 				<a href="#Model.NewModel">
 					func NewModel(db backends.Backend, collection *dal.Collection) *Model
 				</a>
-				
-			</li>
-			
-			
-			
-			
-			
-			
-			
-			
 
-			
-			
-			
+			</li>
+
+
+
+
+
+
+
+
+
+
+
+
 			<li>
-				
+
 				<a href="#Model.All">
 					func
 					(self *Model)
 					All(into interface{}) error
 				</a>
-				
+
 			</li>
-			
-			
-			
+
+
+
 			<li>
-				
+
 				<a href="#Model.Average">
 					func
 					(self *Model)
 					Average(field string, flt interface{}) (float64, error)
 				</a>
-				
+
 			</li>
-			
-			
-			
+
+
+
 			<li>
-				
+
 				<a href="#Model.Count">
 					func
 					(self *Model)
 					Count(flt interface{}) (uint64, error)
 				</a>
-				
+
 			</li>
-			
-			
-			
+
+
+
 			<li>
 				<strong>
 				<a href="#Model.Create">
@@ -252,9 +252,9 @@
 				</a>
 				</strong>
 			</li>
-			
-			
-			
+
+
+
 			<li>
 				<strong>
 				<a href="#Model.CreateOrUpdate">
@@ -264,9 +264,9 @@
 				</a>
 				</strong>
 			</li>
-			
-			
-			
+
+
+
 			<li>
 				<strong>
 				<a href="#Model.Delete">
@@ -276,9 +276,9 @@
 				</a>
 				</strong>
 			</li>
-			
-			
-			
+
+
+
 			<li>
 				<strong>
 				<a href="#Model.DeleteQuery">
@@ -288,33 +288,33 @@
 				</a>
 				</strong>
 			</li>
-			
-			
-			
+
+
+
 			<li>
-				
+
 				<a href="#Model.Drop">
 					func
 					(self *Model)
 					Drop() error
 				</a>
-				
+
 			</li>
-			
-			
-			
+
+
+
 			<li>
-				
+
 				<a href="#Model.Each">
 					func
 					(self *Model)
 					Each(destZeroValue interface{}, resultFn ResultFunc) error
 				</a>
-				
+
 			</li>
-			
-			
-			
+
+
+
 			<li>
 				<strong>
 				<a href="#Model.Exists">
@@ -324,9 +324,9 @@
 				</a>
 				</strong>
 			</li>
-			
-			
-			
+
+
+
 			<li>
 				<strong>
 				<a href="#Model.Find">
@@ -336,9 +336,9 @@
 				</a>
 				</strong>
 			</li>
-			
-			
-			
+
+
+
 			<li>
 				<strong>
 				<a href="#Model.FindFunc">
@@ -348,9 +348,9 @@
 				</a>
 				</strong>
 			</li>
-			
-			
-			
+
+
+
 			<li>
 				<strong>
 				<a href="#Model.Get">
@@ -360,131 +360,131 @@
 				</a>
 				</strong>
 			</li>
-			
-			
-			
+
+
+
 			<li>
-				
+
 				<a href="#Model.GetBackend">
 					func
 					(self *Model)
 					GetBackend() backends.Backend
 				</a>
-				
+
 			</li>
-			
-			
-			
+
+
+
 			<li>
-				
+
 				<a href="#Model.GetCollection">
 					func
 					(self *Model)
 					GetCollection() *dal.Collection
 				</a>
-				
+
 			</li>
-			
-			
-			
+
+
+
 			<li>
-				
+
 				<a href="#Model.GroupBy">
 					func
 					(self *Model)
 					GroupBy(fields []string, aggregates []filter.Aggregate, flt interface{}) (*dal.RecordSet, error)
 				</a>
-				
+
 			</li>
-			
-			
-			
+
+
+
 			<li>
-				
+
 				<a href="#Model.List">
 					func
 					(self *Model)
 					List(fields []string) (map[string][]interface{}, error)
 				</a>
-				
+
 			</li>
-			
-			
-			
+
+
+
 			<li>
-				
+
 				<a href="#Model.ListWithFilter">
 					func
 					(self *Model)
 					ListWithFilter(fields []string, flt interface{}) (map[string][]interface{}, error)
 				</a>
-				
+
 			</li>
-			
-			
-			
+
+
+
 			<li>
-				
+
 				<a href="#Model.Maximum">
 					func
 					(self *Model)
 					Maximum(field string, flt interface{}) (float64, error)
 				</a>
-				
+
 			</li>
-			
-			
-			
+
+
+
 			<li>
-				
+
 				<a href="#Model.Migrate">
 					func
 					(self *Model)
 					Migrate() error
 				</a>
-				
+
 			</li>
-			
-			
-			
+
+
+
 			<li>
-				
+
 				<a href="#Model.Minimum">
 					func
 					(self *Model)
 					Minimum(field string, flt interface{}) (float64, error)
 				</a>
-				
+
 			</li>
-			
-			
-			
-			
-			
+
+
+
+
+
 			<li>
-				
+
 				<a href="#Model.String">
 					func
 					(self *Model)
 					String() string
 				</a>
-				
+
 			</li>
-			
-			
-			
+
+
+
 			<li>
-				
+
 				<a href="#Model.Sum">
 					func
 					(self *Model)
 					Sum(field string, flt interface{}) (float64, error)
 				</a>
-				
+
 			</li>
-			
-			
-			
+
+
+
 			<li>
 				<strong>
 				<a href="#Model.Update">
@@ -494,26 +494,26 @@
 				</a>
 				</strong>
 			</li>
-			
-			
+
+
 		</ul>
-		
+
 	</li>
-	
+
     <li>
 		<a href="#ResultFunc">type ResultFunc </a>
 
-		
-		
+
+
 	</li>
-	
+
 </ul>
 
 
 
 
 <h4 id="pkg-files">
-	<a href="https://github.com/ghetzel/pivot">Package Files</a>
+	<a href="https://github.com/ozanturksever/pivot">Package Files</a>
 	<a class="permalink" href="#pkg-files">&#182;</a>
 </h4>
 
@@ -530,12 +530,12 @@
 	</tr>
 </thead>
 <tbody>
-	
+
 	<tr>
 		<td class="text-left">
-			
+
 			<a href="model.go">model.go</a>
-			
+
 		</td>
 		<td class="text-right">11KB</td>
 		<td class="text-right">295</td>
@@ -544,7 +544,7 @@
 		<td class="text-right"></td>
 		<td class="text-right"></td>
 	</tr>
-	
+
 </tbody>
 </table>
 
@@ -559,9 +559,9 @@
         </div>
         <div id="x-footer" class="clearfix">
             <div class="container">
-                
+
                 Generated by <i><a target="_blank" href="https://github.com/ghetzel/go-owndoc">go-owndoc</a></i> v0.0.7
-                
+
 
                 <span class="pull-right">
                     <a href="#">Back to top</a>

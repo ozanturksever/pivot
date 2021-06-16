@@ -11,9 +11,9 @@ import (
 	"github.com/ghetzel/go-stockutil/maputil"
 	"github.com/ghetzel/go-stockutil/sliceutil"
 	"github.com/ghetzel/go-stockutil/utils"
-	"github.com/ghetzel/pivot/v3/dal"
-	"github.com/ghetzel/pivot/v3/filter"
 	"github.com/gomodule/redigo/redis"
+	"github.com/ozanturksever/pivot/v3/dal"
+	"github.com/ozanturksever/pivot/v3/filter"
 )
 
 var RedisDefaultProtocol = `tcp`

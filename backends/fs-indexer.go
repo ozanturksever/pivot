@@ -4,8 +4,8 @@ import (
 	"strings"
 
 	"github.com/ghetzel/go-stockutil/sliceutil"
-	"github.com/ghetzel/pivot/v3/dal"
-	"github.com/ghetzel/pivot/v3/filter"
+	"github.com/ozanturksever/pivot/v3/dal"
+	"github.com/ozanturksever/pivot/v3/filter"
 )
 
 func (self *FilesystemBackend) IndexConnectionString() *dal.ConnectionString {

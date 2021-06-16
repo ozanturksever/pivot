@@ -7,9 +7,9 @@ import (
 	"reflect"
 
 	"github.com/ghetzel/go-stockutil/typeutil"
-	"github.com/ghetzel/pivot/v3/dal"
-	"github.com/ghetzel/pivot/v3/filter"
-	"github.com/ghetzel/pivot/v3/filter/generators"
+	"github.com/ozanturksever/pivot/v3/dal"
+	"github.com/ozanturksever/pivot/v3/filter"
+	"github.com/ozanturksever/pivot/v3/filter/generators"
 )
 
 type sqlAggResultFunc func(*sql.Rows, *generators.Sql, *dal.Collection, *filter.Filter) (interface{}, error)

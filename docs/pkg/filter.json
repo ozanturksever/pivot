@@ -1,9 +1,9 @@
 {
     "Name": "filter",
-    "CanonicalImportPath": "github.com/ghetzel/pivot/filter",
+    "CanonicalImportPath": "github.com/ozanturksever/pivot/filter",
     "ImportPath": "filter",
     "ParentPackage": "pivot",
-    "URL": "https://github.com/ghetzel/pivot",
+    "URL": "https://github.com/ozanturksever/pivot",
     "Synopsis": "",
     "MainFunction": false,
     "CommentWordCount": 3,
@@ -75,11 +75,11 @@
                     "Alias": "typeutil"
                 },
                 {
-                    "PackageName": "github.com/ghetzel/pivot/v3/dal",
+                    "PackageName": "github.com/ozanturksever/pivot/v3/dal",
                     "Alias": "dal"
                 },
                 {
-                    "PackageName": "github.com/ghetzel/pivot/v3/util",
+                    "PackageName": "github.com/ozanturksever/pivot/v3/util",
                     "Alias": "util"
                 }
             ],
@@ -99,7 +99,7 @@
                     "Alias": "testing"
                 },
                 {
-                    "PackageName": "github.com/ghetzel/pivot/v3/dal",
+                    "PackageName": "github.com/ozanturksever/pivot/v3/dal",
                     "Alias": "dal"
                 },
                 {
@@ -123,7 +123,7 @@
                     "Alias": "testing"
                 },
                 {
-                    "PackageName": "github.com/ghetzel/pivot/v3/dal",
+                    "PackageName": "github.com/ozanturksever/pivot/v3/dal",
                     "Alias": "dal"
                 },
                 {
@@ -1102,10 +1102,10 @@
     "Packages": [
         {
             "Name": "generators",
-            "CanonicalImportPath": "github.com/ghetzel/pivot/filter/generators",
+            "CanonicalImportPath": "github.com/ozanturksever/pivot/filter/generators",
             "ImportPath": "filter/generators",
             "ParentPackage": "filter",
-            "URL": "https://github.com/ghetzel/pivot",
+            "URL": "https://github.com/ozanturksever/pivot",
             "Synopsis": "",
             "MainFunction": false,
             "CommentWordCount": 16,
@@ -1137,7 +1137,7 @@
                             "Alias": "fmt"
                         },
                         {
-                            "PackageName": "github.com/ghetzel/pivot/v3/filter",
+                            "PackageName": "github.com/ozanturksever/pivot/v3/filter",
                             "Alias": "filter"
                         }
                     ],
@@ -1161,7 +1161,7 @@
                             "Alias": "typeutil"
                         },
                         {
-                            "PackageName": "github.com/ghetzel/pivot/v3/filter",
+                            "PackageName": "github.com/ozanturksever/pivot/v3/filter",
                             "Alias": "filter"
                         }
                     ],
@@ -1189,7 +1189,7 @@
                             "Alias": "stringutil"
                         },
                         {
-                            "PackageName": "github.com/ghetzel/pivot/v3/filter",
+                            "PackageName": "github.com/ozanturksever/pivot/v3/filter",
                             "Alias": "filter"
                         }
                     ],
@@ -1217,7 +1217,7 @@
                             "Alias": "stringutil"
                         },
                         {
-                            "PackageName": "github.com/ghetzel/pivot/v3/filter",
+                            "PackageName": "github.com/ozanturksever/pivot/v3/filter",
                             "Alias": "filter"
                         }
                     ],
@@ -1241,7 +1241,7 @@
                             "Alias": "json"
                         },
                         {
-                            "PackageName": "github.com/ghetzel/pivot/v3/filter",
+                            "PackageName": "github.com/ozanturksever/pivot/v3/filter",
                             "Alias": "filter"
                         },
                         {
@@ -1309,11 +1309,11 @@
                             "Alias": "typeutil"
                         },
                         {
-                            "PackageName": "github.com/ghetzel/pivot/v3/dal",
+                            "PackageName": "github.com/ozanturksever/pivot/v3/dal",
                             "Alias": "dal"
                         },
                         {
-                            "PackageName": "github.com/ghetzel/pivot/v3/filter",
+                            "PackageName": "github.com/ozanturksever/pivot/v3/filter",
                             "Alias": "filter"
                         }
                     ],
@@ -1353,11 +1353,11 @@
                             "Alias": "maputil"
                         },
                         {
-                            "PackageName": "github.com/ghetzel/pivot/v3/dal",
+                            "PackageName": "github.com/ozanturksever/pivot/v3/dal",
                             "Alias": "dal"
                         },
                         {
-                            "PackageName": "github.com/ghetzel/pivot/v3/filter",
+                            "PackageName": "github.com/ozanturksever/pivot/v3/filter",
                             "Alias": "filter"
                         },
                         {

@@ -10,9 +10,9 @@ import (
 	"github.com/ghetzel/go-stockutil/maputil"
 	"github.com/ghetzel/go-stockutil/sliceutil"
 	"github.com/ghetzel/go-stockutil/stringutil"
-	"github.com/ghetzel/pivot/v3/dal"
-	"github.com/ghetzel/pivot/v3/filter/generators"
 	_ "github.com/mattn/go-sqlite3"
+	"github.com/ozanturksever/pivot/v3/dal"
+	"github.com/ozanturksever/pivot/v3/filter/generators"
 )
 
 func preinitializeSqlite(self *SqlBackend) {

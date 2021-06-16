@@ -20,11 +20,11 @@ import (
 	"github.com/ghetzel/go-stockutil/pathutil"
 	"github.com/ghetzel/go-stockutil/stringutil"
 	"github.com/ghetzel/go-stockutil/typeutil"
-	"github.com/ghetzel/pivot/v3/backends"
-	"github.com/ghetzel/pivot/v3/dal"
-	"github.com/ghetzel/pivot/v3/filter"
-	"github.com/ghetzel/pivot/v3/util"
 	"github.com/husobee/vestigo"
+	"github.com/ozanturksever/pivot/v3/backends"
+	"github.com/ozanturksever/pivot/v3/dal"
+	"github.com/ozanturksever/pivot/v3/filter"
+	"github.com/ozanturksever/pivot/v3/util"
 	"github.com/urfave/negroni"
 )
 

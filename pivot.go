@@ -15,10 +15,10 @@ import (
 	"github.com/ghetzel/go-stockutil/log"
 	"github.com/ghetzel/go-stockutil/sliceutil"
 	"github.com/ghetzel/go-stockutil/typeutil"
-	"github.com/ghetzel/pivot/v3/backends"
-	"github.com/ghetzel/pivot/v3/dal"
-	"github.com/ghetzel/pivot/v3/filter"
 	"github.com/ghodss/yaml"
+	"github.com/ozanturksever/pivot/v3/backends"
+	"github.com/ozanturksever/pivot/v3/dal"
+	"github.com/ozanturksever/pivot/v3/filter"
 )
 
 // create handy type aliases to avoid importing from all over the place

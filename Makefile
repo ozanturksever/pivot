@@ -3,7 +3,7 @@ EXAMPLES       := $(wildcard examples/*)
 GO111MODULE    ?= on
 CGO_CFLAGS      = -I/opt/homebrew/include
 CGO_LDFLAGS     = -L/opt/homebrew/lib
-DOCKER_VERSION  = $(shell grep -m1 'go get github.com/ghetzel/pivot' Dockerfile | cut -d@ -f2 | tr -d v)
+DOCKER_VERSION  = $(shell grep -m1 'go get github.com/ozanturksever/pivot' Dockerfile | cut -d@ -f2 | tr -d v)
 
 all: deps fmt test build docs
 

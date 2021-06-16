@@ -14,13 +14,13 @@ import (
 	"github.com/ghetzel/go-stockutil/log"
 	"github.com/ghetzel/go-stockutil/sliceutil"
 	"github.com/ghetzel/go-stockutil/stringutil"
-	"github.com/ghetzel/pivot/v3"
-	"github.com/ghetzel/pivot/v3/backends"
-	"github.com/ghetzel/pivot/v3/client"
-	"github.com/ghetzel/pivot/v3/dal"
-	"github.com/ghetzel/pivot/v3/filter"
-	"github.com/ghetzel/pivot/v3/filter/generators"
-	"github.com/ghetzel/pivot/v3/mapper"
+	"github.com/ozanturksever/pivot/v3"
+	"github.com/ozanturksever/pivot/v3/backends"
+	"github.com/ozanturksever/pivot/v3/client"
+	"github.com/ozanturksever/pivot/v3/dal"
+	"github.com/ozanturksever/pivot/v3/filter"
+	"github.com/ozanturksever/pivot/v3/filter/generators"
+	"github.com/ozanturksever/pivot/v3/mapper"
 )
 
 func main() {

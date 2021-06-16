@@ -8,8 +8,8 @@ import (
 	"time"
 
 	"github.com/ghetzel/go-stockutil/stringutil"
-	"github.com/ghetzel/pivot/v3/dal"
-	"github.com/ghetzel/pivot/v3/filter"
+	"github.com/ozanturksever/pivot/v3/dal"
+	"github.com/ozanturksever/pivot/v3/filter"
 	"gopkg.in/mgo.v2/bson"
 )
 

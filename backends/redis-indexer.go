@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/ghetzel/pivot/v3/dal"
-	"github.com/ghetzel/pivot/v3/filter"
 	"github.com/gomodule/redigo/redis"
+	"github.com/ozanturksever/pivot/v3/dal"
+	"github.com/ozanturksever/pivot/v3/filter"
 )
 
 func (self *RedisBackend) IndexConnectionString() *dal.ConnectionString {

@@ -1,9 +1,9 @@
 {
     "Name": "util",
-    "CanonicalImportPath": "github.com/ghetzel/pivot/util",
+    "CanonicalImportPath": "github.com/ozanturksever/pivot/util",
     "ImportPath": "util",
     "ParentPackage": "pivot",
-    "URL": "https://github.com/ghetzel/pivot",
+    "URL": "https://github.com/ozanturksever/pivot",
     "Synopsis": "",
     "MainFunction": false,
     "CommentWordCount": 0,

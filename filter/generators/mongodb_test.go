@@ -5,7 +5,7 @@ import (
 
 	"encoding/json"
 
-	"github.com/ghetzel/pivot/v3/filter"
+	"github.com/ozanturksever/pivot/v3/filter"
 	"github.com/stretchr/testify/require"
 )
 

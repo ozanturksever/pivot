@@ -3,9 +3,9 @@ package pivot
 import (
 	"fmt"
 
-	"github.com/ghetzel/pivot/v3/backends"
-	"github.com/ghetzel/pivot/v3/dal"
-	"github.com/ghetzel/pivot/v3/mapper"
+	"github.com/ozanturksever/pivot/v3/backends"
+	"github.com/ozanturksever/pivot/v3/dal"
+	"github.com/ozanturksever/pivot/v3/mapper"
 )
 
 type DB interface {

@@ -13,9 +13,9 @@ import (
 	"github.com/ghetzel/go-stockutil/maputil"
 	"github.com/ghetzel/go-stockutil/sliceutil"
 	"github.com/ghetzel/go-stockutil/typeutil"
-	"github.com/ghetzel/pivot/v3/dal"
-	"github.com/ghetzel/pivot/v3/filter"
-	"github.com/ghetzel/pivot/v3/filter/generators"
+	"github.com/ozanturksever/pivot/v3/dal"
+	"github.com/ozanturksever/pivot/v3/filter"
+	"github.com/ozanturksever/pivot/v3/filter/generators"
 )
 
 var ElasticsearchBatchFlushCount = 1

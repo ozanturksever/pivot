@@ -44,7 +44,7 @@
                                 <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu">
-                                
+
                                 <li>
                                     <a href="/pivot/pkg/backends.html">backends</a>
                                 </li>
@@ -81,19 +81,19 @@
                         </li>
                     </ul>
 
-                    
+
                 </div>
             </div>
         </nav>
 
         <div class="container">
-            
+
 <br>
 <div class="clearfix" id="x-projnav">
-	<a href="https://github.com/ghetzel/pivot"><strong>pivot:</strong></a>
-	
+	<a href="https://github.com/ozanturksever/pivot"><strong>pivot:</strong></a>
+
 	<span class="text-muted">https://github.com/ghetzel/pivot</span>
-	
+
 
 	<span class="pull-right">
 		<a href="#pkg-index">Index</a>
@@ -116,283 +116,283 @@
 </h3>
 
 <ul class="list-unstyled">
-	
-	
+
+
     <li><a href="#pkg-constants">Constants</a></li>
-	
 
-	
-	
+
+
+
     <li><a href="#pkg-variables">Variables</a></li>
-	
 
-	
-	
+
+
+
     <li><a href="#pkg-packages">Packages</a></li>
-	
 
-	
-	
+
+
+
     <li>
 		<strong>
 		<a href="#ApplySchemata">func ApplySchemata(fileOrDirPath string, db Backend) error</a>
 		</strong>
 	</li>
-	
+
     <li>
 		<strong>
 		<a href="#Dir">func Dir(useLocal bool, name string) http.FileSystem</a>
 		</strong>
 	</li>
-	
+
     <li>
 		<strong>
 		<a href="#FS">func FS(useLocal bool) http.FileSystem</a>
 		</strong>
 	</li>
-	
+
     <li>
 		<strong>
 		<a href="#FSByte">func FSByte(useLocal bool, name string) ([]byte, error)</a>
 		</strong>
 	</li>
-	
+
     <li>
 		<strong>
 		<a href="#FSMustByte">func FSMustByte(useLocal bool, name string) []byte</a>
 		</strong>
 	</li>
-	
+
     <li>
 		<strong>
 		<a href="#FSMustString">func FSMustString(useLocal bool, name string) string</a>
 		</strong>
 	</li>
-	
+
     <li>
 		<strong>
 		<a href="#FSString">func FSString(useLocal bool, name string) (string, error)</a>
 		</strong>
 	</li>
-	
+
     <li>
 		<strong>
 		<a href="#LoadFixtures">func LoadFixtures(fileOrDirPath string, db Backend) error</a>
 		</strong>
 	</li>
-	
+
     <li>
 		<strong>
 		<a href="#LoadFixturesFromFile">func LoadFixturesFromFile(filename string, db Backend) error</a>
 		</strong>
 	</li>
-	
+
     <li>
 		<strong>
 		<a href="#LoadSchemata">func LoadSchemata(fileOrDirPaths ...string) ([]*dal.Collection, error)</a>
 		</strong>
 	</li>
-	
+
     <li>
 		<strong>
 		<a href="#LoadSchemataFromFile">func LoadSchemataFromFile(filename string) ([]*dal.Collection, error)</a>
 		</strong>
 	</li>
-	
+
     <li>
 		<strong>
 		<a href="#MustGetCollection">func MustGetCollection(db Backend, name string) *dal.Collection</a>
 		</strong>
 	</li>
-	
+
     <li>
 		<strong>
 		<a href="#NewDatabase">func NewDatabase(connection string) (DB, error)</a>
 		</strong>
 	</li>
-	
+
     <li>
 		<strong>
 		<a href="#NewDatabaseWithOptions">func NewDatabaseWithOptions(connection string, options ConnectOptions) (DB, error)</a>
 		</strong>
 	</li>
-	
 
-	
-	
+
+
+
     <li>
 		<a href="#Backend">type Backend </a>
 
-		
-		
+
+
 	</li>
-	
+
     <li>
 		<a href="#Collection">type Collection </a>
 
-		
-		
+
+
 	</li>
-	
+
     <li>
 		<a href="#Configuration">type Configuration</a>
 
-		
-		
+
+
 		<ul>
-			
-			
-			
-			
-			
+
+
+
+
+
 			<li>
-				
+
 				<a href="#Configuration.LoadConfigFile">
 					func LoadConfigFile(path string) (Configuration, error)
 				</a>
-				
-			</li>
-			
-			
 
-			
-			
-			
+			</li>
+
+
+
+
+
+
 			<li>
-				
+
 				<a href="#Configuration.ForEnv">
 					func
 					(self *Configuration)
 					ForEnv(env string) Configuration
 				</a>
-				
+
 			</li>
-			
-			
-			
-			
+
+
+
+
 		</ul>
-		
+
 	</li>
-	
+
     <li>
 		<a href="#ConnectOptions">type ConnectOptions </a>
 
-		
-		
+
+
 	</li>
-	
+
     <li>
 		<a href="#DB">type DB </a>
 
-		
-		
+
+
 	</li>
-	
+
     <li>
 		<a href="#Filter">type Filter </a>
 
-		
-		
+
+
 	</li>
-	
+
     <li>
 		<a href="#Model">type Model </a>
 
-		
-		
+
+
 	</li>
-	
+
     <li>
 		<a href="#Record">type Record </a>
 
-		
-		
+
+
 	</li>
-	
+
     <li>
 		<a href="#RecordSet">type RecordSet </a>
 
-		
-		
+
+
 	</li>
-	
+
     <li>
 		<a href="#Server">type Server</a>
 
-		
-		
+
+
 		<ul>
-			
-			
-			
-			
-			
-			
-			
-			
-			
+
+
+
+
+
+
+
+
+
 			<li>
-				
+
 				<a href="#Server.NewServer">
 					func NewServer(connectionString ...string) *Server
 				</a>
-				
-			</li>
-			
-			
 
-			
-			
-			
+			</li>
+
+
+
+
+
+
 			<li>
-				
+
 				<a href="#Server.AddFixturePath">
 					func
 					(self *Server)
 					AddFixturePath(fileOrDirPath string)
 				</a>
-				
+
 			</li>
-			
-			
-			
+
+
+
 			<li>
-				
+
 				<a href="#Server.AddSchemaDefinition">
 					func
 					(self *Server)
 					AddSchemaDefinition(fileOrDirPath string)
 				</a>
-				
+
 			</li>
-			
-			
-			
+
+
+
 			<li>
-				
+
 				<a href="#Server.ListenAndServe">
 					func
 					(self *Server)
 					ListenAndServe() error
 				</a>
-				
+
 			</li>
-			
-			
-			
-			
+
+
+
+
 		</ul>
-		
+
 	</li>
-	
+
 </ul>
 
 
 
 
 <h4 id="pkg-files">
-	<a href="https://github.com/ghetzel/pivot">Package Files</a>
+	<a href="https://github.com/ozanturksever/pivot">Package Files</a>
 	<a class="permalink" href="#pkg-files">&#182;</a>
 </h4>
 
@@ -409,12 +409,12 @@
 	</tr>
 </thead>
 <tbody>
-	
+
 	<tr>
 		<td class="text-left">
-			
+
 			<a href="config.go">config.go</a>
-			
+
 		</td>
 		<td class="text-right">1KB</td>
 		<td class="text-right">46</td>
@@ -423,12 +423,12 @@
 		<td class="text-right"></td>
 		<td class="text-right"></td>
 	</tr>
-	
+
 	<tr>
 		<td class="text-left">
-			
+
 			<a href="database.go">database.go</a>
-			
+
 		</td>
 		<td class="text-right">2KB</td>
 		<td class="text-right">88</td>
@@ -437,12 +437,12 @@
 		<td class="text-right"></td>
 		<td class="text-right"></td>
 	</tr>
-	
+
 	<tr>
 		<td class="text-left">
-			
+
 			<a href="db_test.go">db_test.go</a>
-			
+
 		</td>
 		<td class="text-right">41KB</td>
 		<td class="text-right">1221</td>
@@ -451,12 +451,12 @@
 		<td class="text-right">3</td>
 		<td class="text-right">1</td>
 	</tr>
-	
+
 	<tr>
 		<td class="text-left">
-			
+
 			<a href="pivot.go">pivot.go</a>
-			
+
 		</td>
 		<td class="text-right">9KB</td>
 		<td class="text-right">261</td>
@@ -465,12 +465,12 @@
 		<td class="text-right"></td>
 		<td class="text-right">2</td>
 	</tr>
-	
+
 	<tr>
 		<td class="text-left">
-			
+
 			<a href="server.go">server.go</a>
-			
+
 		</td>
 		<td class="text-right">22KB</td>
 		<td class="text-right">641</td>
@@ -479,12 +479,12 @@
 		<td class="text-right"></td>
 		<td class="text-right">4</td>
 	</tr>
-	
+
 	<tr>
 		<td class="text-left">
-			
+
 			<a href="static.go">static.go</a>
-			
+
 		</td>
 		<td class="text-right">1MB</td>
 		<td class="text-right">18228</td>
@@ -493,12 +493,12 @@
 		<td class="text-right"></td>
 		<td class="text-right"></td>
 	</tr>
-	
+
 	<tr>
 		<td class="text-left">
-			
+
 			<a href="version.go">version.go</a>
-			
+
 		</td>
 		<td class="text-right">202B</td>
 		<td class="text-right">5</td>
@@ -507,7 +507,7 @@
 		<td class="text-right">3</td>
 		<td class="text-right"></td>
 	</tr>
-	
+
 </tbody>
 </table>
 
@@ -526,8 +526,8 @@ const <span id="ApplicationName">ApplicationName   </span> = `pivot`
 const <span id="ApplicationSummary">ApplicationSummary</span> = `an extensible database abstraction service`
 const <span id="ApplicationVersion">ApplicationVersion</span> = util.Version
 const <span id="TestFirst">TestFirst         </span> = iota
-const <span id="TestSecond">TestSecond        </span> = 
-const <span id="TestThird">TestThird         </span> = 
+const <span id="TestSecond">TestSecond        </span> =
+const <span id="TestThird">TestThird         </span> =
 </pre>
 </div>
 
@@ -763,8 +763,8 @@ var <span id="TestData">TestData            </span> = []byte{0x00, 0x01, 0x02, 0
 
 <div class="decl" data-kind="d">
 	<a title="View Source" href="">&#182;</a>
-	
-	
+
+
 	<pre>type Backend = backends.Backend // create handy type aliases to avoid importing from all over the place
 </pre>
 </div>
@@ -783,8 +783,8 @@ var <span id="TestData">TestData            </span> = []byte{0x00, 0x01, 0x02, 0
 
 <div class="decl" data-kind="d">
 	<a title="View Source" href="">&#182;</a>
-	
-	
+
+
 	<pre>type Collection = dal.Collection</pre>
 </div>
 
@@ -802,8 +802,8 @@ var <span id="TestData">TestData            </span> = []byte{0x00, 0x01, 0x02, 0
 
 <div class="decl" data-kind="d">
 	<a title="View Source" href="">&#182;</a>
-	
-	
+
+
 	<pre>type Configuration struct {
 	Backend               string                   `json:&#34;backend&#34;`
 	Indexer               string                   `json:&#34;indexer&#34;`
@@ -859,8 +859,8 @@ var <span id="TestData">TestData            </span> = []byte{0x00, 0x01, 0x02, 0
 
 <div class="decl" data-kind="d">
 	<a title="View Source" href="">&#182;</a>
-	
-	
+
+
 	<pre>type ConnectOptions = backends.ConnectOptions</pre>
 </div>
 
@@ -878,8 +878,8 @@ var <span id="TestData">TestData            </span> = []byte{0x00, 0x01, 0x02, 0
 
 <div class="decl" data-kind="d">
 	<a title="View Source" href="">&#182;</a>
-	
-	
+
+
 	<pre>type DB interface {
 	backends.Backend
 	AttachCollection(*Collection) Model
@@ -907,8 +907,8 @@ var <span id="TestData">TestData            </span> = []byte{0x00, 0x01, 0x02, 0
 
 <div class="decl" data-kind="d">
 	<a title="View Source" href="">&#182;</a>
-	
-	
+
+
 	<pre>type Filter = filter.Filter</pre>
 </div>
 
@@ -926,8 +926,8 @@ var <span id="TestData">TestData            </span> = []byte{0x00, 0x01, 0x02, 0
 
 <div class="decl" data-kind="d">
 	<a title="View Source" href="">&#182;</a>
-	
-	
+
+
 	<pre>type Model = backends.Mapper</pre>
 </div>
 
@@ -945,8 +945,8 @@ var <span id="TestData">TestData            </span> = []byte{0x00, 0x01, 0x02, 0
 
 <div class="decl" data-kind="d">
 	<a title="View Source" href="">&#182;</a>
-	
-	
+
+
 	<pre>type Record = dal.Record</pre>
 </div>
 
@@ -964,8 +964,8 @@ var <span id="TestData">TestData            </span> = []byte{0x00, 0x01, 0x02, 0
 
 <div class="decl" data-kind="d">
 	<a title="View Source" href="">&#182;</a>
-	
-	
+
+
 	<pre>type RecordSet = dal.RecordSet</pre>
 </div>
 
@@ -983,10 +983,10 @@ var <span id="TestData">TestData            </span> = []byte{0x00, 0x01, 0x02, 0
 
 <div class="decl" data-kind="d">
 	<a title="View Source" href="">&#182;</a>
-	
-	
-	
-	
+
+
+
+
 	<pre>type Server struct {
 	Address          string
 	ConnectionString string
@@ -1087,70 +1087,70 @@ var <span id="TestData">TestData            </span> = []byte{0x00, 0x01, 0x02, 0
 	</tr>
 </thead>
 <tbody>
-	
+
 	<tr>
 		<td class="text-left">
 			<a href="/pivot/pkg/backends.html">backends</a>
 		</td>
 		<td class="text-left">
-			
+
 		</td>
 	</tr>
-	
+
 	<tr>
 		<td class="text-left">
 			<a href="/pivot/pkg/client.html">client</a>
 		</td>
 		<td class="text-left">
-			
+
 		</td>
 	</tr>
-	
+
 	<tr>
 		<td class="text-left">
 			<a href="/pivot/pkg/dal.html">dal</a>
 		</td>
 		<td class="text-left">
-			
+
 		</td>
 	</tr>
-	
+
 	<tr>
 		<td class="text-left">
 			<a href="/pivot/pkg/filter.html">filter</a>
 		</td>
 		<td class="text-left">
-			
+
 		</td>
 	</tr>
-	
+
 	<tr>
 		<td class="text-left">
 			<a href="/pivot/pkg/mapper.html">mapper</a>
 		</td>
 		<td class="text-left">
-			
+
 		</td>
 	</tr>
-	
+
 	<tr>
 		<td class="text-left">
 			<a href="/pivot/pkg/util.html">util</a>
 		</td>
 		<td class="text-left">
-			
+
 		</td>
 	</tr>
-	
+
 </tbody>
 </table>
 
         </div>
         <div id="x-footer" class="clearfix">
             <div class="container">
-                
+
                 Generated by <i><a target="_blank" href="https://github.com/ghetzel/go-owndoc">go-owndoc</a></i> v0.0.7
-                
+
 
                 <span class="pull-right">
                     <a href="#">Back to top</a>

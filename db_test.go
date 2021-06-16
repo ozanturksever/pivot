@@ -15,10 +15,10 @@ import (
 	"github.com/ghetzel/go-stockutil/stringutil"
 	"github.com/ghetzel/go-stockutil/typeutil"
 	"github.com/ory/dockertest"
-	"github.com/ozanturksever/pivot/v3/backends"
-	"github.com/ozanturksever/pivot/v3/dal"
-	"github.com/ozanturksever/pivot/v3/filter"
-	"github.com/ozanturksever/pivot/v3/mapper"
+	"github.com/ozanturksever/pivot/v4/backends"
+	"github.com/ozanturksever/pivot/v4/dal"
+	"github.com/ozanturksever/pivot/v4/filter"
+	"github.com/ozanturksever/pivot/v4/mapper"
 	"github.com/stretchr/testify/require"
 )
 

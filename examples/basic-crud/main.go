@@ -7,9 +7,9 @@ import (
 	"os"
 	"time"
 
-	"github.com/ozanturksever/pivot/v3"
-	"github.com/ozanturksever/pivot/v3/dal"
-	"github.com/ozanturksever/pivot/v3/mapper"
+	"github.com/ozanturksever/pivot/v4"
+	"github.com/ozanturksever/pivot/v4/dal"
+	"github.com/ozanturksever/pivot/v4/mapper"
 )
 
 type User struct {

@@ -14,8 +14,8 @@ import (
 	"github.com/ghetzel/go-stockutil/sliceutil"
 	"github.com/ghetzel/go-stockutil/stringutil"
 	"github.com/ghetzel/go-stockutil/typeutil"
-	"github.com/ozanturksever/pivot/v3/dal"
-	"github.com/ozanturksever/pivot/v3/filter"
+	"github.com/ozanturksever/pivot/v4/dal"
+	"github.com/ozanturksever/pivot/v4/filter"
 )
 
 var SqlMaxPlaceholders = 16384

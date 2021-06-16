@@ -7,9 +7,9 @@ import (
 	"reflect"
 
 	"github.com/ghetzel/go-stockutil/sliceutil"
-	"github.com/ozanturksever/pivot/v3/dal"
-	"github.com/ozanturksever/pivot/v3/filter"
-	"github.com/ozanturksever/pivot/v3/filter/generators"
+	"github.com/ozanturksever/pivot/v4/dal"
+	"github.com/ozanturksever/pivot/v4/filter"
+	"github.com/ozanturksever/pivot/v4/filter/generators"
 )
 
 func (self *SqlBackend) QueryFunc(collection *dal.Collection, f *filter.Filter, resultFn IndexResultFunc) error {

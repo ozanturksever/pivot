@@ -51,11 +51,11 @@
                     "Alias": "typeutil"
                 },
                 {
-                    "PackageName": "github.com/ozanturksever/pivot/v3/dal",
+                    "PackageName": "github.com/ozanturksever/pivot/v4/dal",
                     "Alias": "dal"
                 },
                 {
-                    "PackageName": "github.com/ozanturksever/pivot/v3/util",
+                    "PackageName": "github.com/ozanturksever/pivot/v4/util",
                     "Alias": "util"
                 }
             ],

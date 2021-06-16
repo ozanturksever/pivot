@@ -7,9 +7,9 @@ import (
 
 	"github.com/ghetzel/go-stockutil/stringutil"
 	_ "github.com/go-sql-driver/mysql"
-	"github.com/ozanturksever/pivot/v3/dal"
-	"github.com/ozanturksever/pivot/v3/filter"
-	"github.com/ozanturksever/pivot/v3/filter/generators"
+	"github.com/ozanturksever/pivot/v4/dal"
+	"github.com/ozanturksever/pivot/v4/filter"
+	"github.com/ozanturksever/pivot/v4/filter/generators"
 )
 
 func preinitializeMysql(self *SqlBackend) {

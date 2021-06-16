@@ -9,9 +9,9 @@ import (
 	"github.com/ghetzel/go-stockutil/httputil"
 	"github.com/ghetzel/go-stockutil/maputil"
 	"github.com/ghetzel/go-stockutil/typeutil"
-	"github.com/ozanturksever/pivot/v3/dal"
-	"github.com/ozanturksever/pivot/v3/filter"
-	"github.com/ozanturksever/pivot/v3/filter/generators"
+	"github.com/ozanturksever/pivot/v4/dal"
+	"github.com/ozanturksever/pivot/v4/filter"
+	"github.com/ozanturksever/pivot/v4/filter/generators"
 )
 
 type esAggregationQuery struct {

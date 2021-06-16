@@ -51,15 +51,15 @@
                     "Alias": "typeutil"
                 },
                 {
-                    "PackageName": "github.com/ozanturksever/pivot/v3/backends",
+                    "PackageName": "github.com/ozanturksever/pivot/v4/backends",
                     "Alias": "backends"
                 },
                 {
-                    "PackageName": "github.com/ozanturksever/pivot/v3/dal",
+                    "PackageName": "github.com/ozanturksever/pivot/v4/dal",
                     "Alias": "dal"
                 },
                 {
-                    "PackageName": "github.com/ozanturksever/pivot/v3/filter",
+                    "PackageName": "github.com/ozanturksever/pivot/v4/filter",
                     "Alias": "filter"
                 }
             ],

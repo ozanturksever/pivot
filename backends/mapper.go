@@ -1,8 +1,8 @@
 package backends
 
 import (
-	"github.com/ozanturksever/pivot/v3/dal"
-	"github.com/ozanturksever/pivot/v3/filter"
+	"github.com/ozanturksever/pivot/v4/dal"
+	"github.com/ozanturksever/pivot/v4/filter"
 )
 
 type ResultFunc func(ptrToInstance interface{}, err error) // {}

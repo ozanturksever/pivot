@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/ozanturksever/pivot/v3/filter"
+	"github.com/ozanturksever/pivot/v4/filter"
 )
 
 // Elasticsearch Generator

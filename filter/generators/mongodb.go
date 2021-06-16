@@ -5,7 +5,7 @@ import (
 	"fmt"
 
 	"github.com/ghetzel/go-stockutil/stringutil"
-	"github.com/ozanturksever/pivot/v3/filter"
+	"github.com/ozanturksever/pivot/v4/filter"
 )
 
 // MongoDB Query Generator

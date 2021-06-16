@@ -75,11 +75,11 @@
                     "Alias": "typeutil"
                 },
                 {
-                    "PackageName": "github.com/ozanturksever/pivot/v3/dal",
+                    "PackageName": "github.com/ozanturksever/pivot/v4/dal",
                     "Alias": "dal"
                 },
                 {
-                    "PackageName": "github.com/ozanturksever/pivot/v3/util",
+                    "PackageName": "github.com/ozanturksever/pivot/v4/util",
                     "Alias": "util"
                 }
             ],
@@ -99,7 +99,7 @@
                     "Alias": "testing"
                 },
                 {
-                    "PackageName": "github.com/ozanturksever/pivot/v3/dal",
+                    "PackageName": "github.com/ozanturksever/pivot/v4/dal",
                     "Alias": "dal"
                 },
                 {
@@ -123,7 +123,7 @@
                     "Alias": "testing"
                 },
                 {
-                    "PackageName": "github.com/ozanturksever/pivot/v3/dal",
+                    "PackageName": "github.com/ozanturksever/pivot/v4/dal",
                     "Alias": "dal"
                 },
                 {
@@ -1137,7 +1137,7 @@
                             "Alias": "fmt"
                         },
                         {
-                            "PackageName": "github.com/ozanturksever/pivot/v3/filter",
+                            "PackageName": "github.com/ozanturksever/pivot/v4/filter",
                             "Alias": "filter"
                         }
                     ],
@@ -1161,7 +1161,7 @@
                             "Alias": "typeutil"
                         },
                         {
-                            "PackageName": "github.com/ozanturksever/pivot/v3/filter",
+                            "PackageName": "github.com/ozanturksever/pivot/v4/filter",
                             "Alias": "filter"
                         }
                     ],
@@ -1189,7 +1189,7 @@
                             "Alias": "stringutil"
                         },
                         {
-                            "PackageName": "github.com/ozanturksever/pivot/v3/filter",
+                            "PackageName": "github.com/ozanturksever/pivot/v4/filter",
                             "Alias": "filter"
                         }
                     ],
@@ -1217,7 +1217,7 @@
                             "Alias": "stringutil"
                         },
                         {
-                            "PackageName": "github.com/ozanturksever/pivot/v3/filter",
+                            "PackageName": "github.com/ozanturksever/pivot/v4/filter",
                             "Alias": "filter"
                         }
                     ],
@@ -1241,7 +1241,7 @@
                             "Alias": "json"
                         },
                         {
-                            "PackageName": "github.com/ozanturksever/pivot/v3/filter",
+                            "PackageName": "github.com/ozanturksever/pivot/v4/filter",
                             "Alias": "filter"
                         },
                         {
@@ -1309,11 +1309,11 @@
                             "Alias": "typeutil"
                         },
                         {
-                            "PackageName": "github.com/ozanturksever/pivot/v3/dal",
+                            "PackageName": "github.com/ozanturksever/pivot/v4/dal",
                             "Alias": "dal"
                         },
                         {
-                            "PackageName": "github.com/ozanturksever/pivot/v3/filter",
+                            "PackageName": "github.com/ozanturksever/pivot/v4/filter",
                             "Alias": "filter"
                         }
                     ],
@@ -1353,11 +1353,11 @@
                             "Alias": "maputil"
                         },
                         {
-                            "PackageName": "github.com/ozanturksever/pivot/v3/dal",
+                            "PackageName": "github.com/ozanturksever/pivot/v4/dal",
                             "Alias": "dal"
                         },
                         {
-                            "PackageName": "github.com/ozanturksever/pivot/v3/filter",
+                            "PackageName": "github.com/ozanturksever/pivot/v4/filter",
                             "Alias": "filter"
                         },
                         {
